@@ -1,0 +1,171 @@
+[
+  {
+    "_id": "19866d5a-34c0-4fa9-8cd3-877e01e18792",
+    "colId": "4686eb96-627b-4242-b2c0-b51e235bd9a8",
+    "containerId": "3eef76ab-df17-4a59-b69e-22b313d83f9d",
+    "name": "login",
+    "url": "http://127.0.0.1:5000/api/auth/login",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2023-04-17T05:46:45.985Z",
+    "modified": "2023-04-19T11:33:01.290Z",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"email\":\"darsh@gmail.com\",\n  \"password\": \"charmiisamazing\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "9846590f-d815-423f-a521-6cdef857be69",
+    "colId": "4686eb96-627b-4242-b2c0-b51e235bd9a8",
+    "containerId": "3eef76ab-df17-4a59-b69e-22b313d83f9d",
+    "name": "create user",
+    "url": "http://127.0.0.1:5000/api/auth/createuser",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2023-04-17T05:46:45.986Z",
+    "modified": "2023-04-17T05:46:45.986Z",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"username\":\"darsh\",\n  \"email\":\"darsh@gmail.com\",\n  \"password\": \"charmiisamazing\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "98b82f18-a10e-4804-85c1-79a820854189",
+    "colId": "4686eb96-627b-4242-b2c0-b51e235bd9a8",
+    "containerId": "3eef76ab-df17-4a59-b69e-22b313d83f9d",
+    "name": "user details",
+    "url": "http://127.0.0.1:5000/api/auth/getuser",
+    "method": "POST",
+    "sortNum": 40000,
+    "created": "2023-04-17T05:46:45.987Z",
+    "modified": "2023-04-17T05:46:45.987Z",
+    "headers": [
+      {
+        "name": "auth-token",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjQzYzQ4OWFlZWIyNjAwYzI5MTljMDgzIn0sImlhdCI6MTY4MTY3MjM0Nn0.aRXO7_bDNtiCz-zA42yEcfa7C7tvl1w1w5G5lXZVASw"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "f7293547-b4f3-423f-b094-3abec67c1b9b",
+    "colId": "4686eb96-627b-4242-b2c0-b51e235bd9a8",
+    "containerId": "3541d20d-c233-4d73-8af5-0a56f53e01d2",
+    "name": "fetch all notes",
+    "url": "http://127.0.0.1:5000/api/notes/fetchallnotes",
+    "method": "GET",
+    "sortNum": 50000,
+    "created": "2023-04-17T05:46:45.988Z",
+    "modified": "2023-04-17T05:46:45.988Z",
+    "headers": [
+      {
+        "name": "auth-token",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjQzYzQ4OWFlZWIyNjAwYzI5MTljMDgzIn0sImlhdCI6MTY4MTY3MjM0Nn0.aRXO7_bDNtiCz-zA42yEcfa7C7tvl1w1w5G5lXZVASw"
+      }
+    ],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "fa404c59-0acb-48a5-ab51-5f11eb52a379",
+    "colId": "4686eb96-627b-4242-b2c0-b51e235bd9a8",
+    "containerId": "3541d20d-c233-4d73-8af5-0a56f53e01d2",
+    "name": "add note",
+    "url": "http://127.0.0.1:5000/api/notes/addnote",
+    "method": "POST",
+    "sortNum": 60000,
+    "created": "2023-04-17T05:46:45.989Z",
+    "modified": "2023-04-17T10:47:05.705Z",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "auth-token",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjQzYzQ4OWFlZWIyNjAwYzI5MTljMDgzIn0sImlhdCI6MTY4MTY3MjM0Nn0.aRXO7_bDNtiCz-zA42yEcfa7C7tvl1w1w5G5lXZVASw"
+      },
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "*"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"title\": \"bbc\",\n  \"description\": \"ccaabbss\",\n  \"tag\":\"dd\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "59803d1f-8a90-4902-84e8-b8d637aa074f",
+    "colId": "4686eb96-627b-4242-b2c0-b51e235bd9a8",
+    "containerId": "3541d20d-c233-4d73-8af5-0a56f53e01d2",
+    "name": "update note",
+    "url": "http://127.0.0.1:5000/api/notes/updatenote/643c494c071c061281d55613",
+    "method": "PUT",
+    "sortNum": 65000,
+    "created": "2023-04-17T05:46:45.990Z",
+    "modified": "2023-04-17T05:46:45.990Z",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "auth-token",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjQzYmZjOTI2YjRiMzVjMzEyNmY4ZDA4In0sImlhdCI6MTY4MTY1Mjg4Mn0.askqkIugHh7CmZuL0bvc_kLdfrWQvw8eV4ZiojNZHVo"
+      }
+    ],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"title\": \"hehe updated\",\n  \"description\": \"lmao hahahh updated\",\n  \"tag\":\"funsies\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "4743f487-15b2-4d65-9b0a-864d06d20071",
+    "colId": "4686eb96-627b-4242-b2c0-b51e235bd9a8",
+    "containerId": "3541d20d-c233-4d73-8af5-0a56f53e01d2",
+    "name": "delete note",
+    "url": "http://127.0.0.1:5000/api/notes/deletenote/643c494c071c061281d55613",
+    "method": "DELETE",
+    "sortNum": 75000,
+    "created": "2023-04-17T05:46:45.991Z",
+    "modified": "2023-04-17T05:46:45.991Z",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "auth-token",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjQzYmZjOTI2YjRiMzVjMzEyNmY4ZDA4In0sImlhdCI6MTY4MTY1Mjg4Mn0.askqkIugHh7CmZuL0bvc_kLdfrWQvw8eV4ZiojNZHVo"
+      }
+    ],
+    "params": [],
+    "tests": []
+  }
+]

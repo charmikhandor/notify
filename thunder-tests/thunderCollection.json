@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "4686eb96-627b-4242-b2c0-b51e235bd9a8",
+    "colName": "noteify",
+    "created": "2023-04-17T05:46:45.977Z",
+    "sortNum": 10000,
+    "folders": [
+      {
+        "_id": "3eef76ab-df17-4a59-b69e-22b313d83f9d",
+        "name": "auth",
+        "containerId": "",
+        "created": "2023-04-17T05:46:45.985Z",
+        "sortNum": 10000
+      },
+      {
+        "_id": "3541d20d-c233-4d73-8af5-0a56f53e01d2",
+        "name": "notes",
+        "containerId": "",
+        "created": "2023-04-17T05:46:45.986Z",
+        "sortNum": 20000
+      }
+    ]
+  }
+]
